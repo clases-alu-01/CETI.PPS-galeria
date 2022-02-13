@@ -16,7 +16,7 @@ locale.setlocale(locale.LC_TIME, '')
 
 @app.route('/')
 def homepage():
-
+    lint_error = False   # Añadida para probar linting
     the_time = datetime.now().strftime("%A, %d %b %Y %H:%M")
 
     # Render HTML with variable
