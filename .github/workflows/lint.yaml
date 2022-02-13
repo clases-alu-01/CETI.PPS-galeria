@@ -1,6 +1,11 @@
 name: Lint Python
 
-on: 
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '**.py'  
   push:
     paths: 
       - '**.py'
